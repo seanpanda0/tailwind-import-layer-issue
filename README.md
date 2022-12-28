@@ -1,3 +1,17 @@
+
+# This is an example replicating an issue with tailwind imports and layers.
+
+## issue links
+- https://github.com/tailwindlabs/tailwindcss.com/issues/1472
+- https://stackoverflow.com/questions/67342849/import-some-attribute-not-work-in-layer-tailwindcss/74943618#74943618
+- https://stackoverflow.com/questions/69746121/how-can-you-import-in-css-using-tailwind-css/74943254#74943254
+
+## Followed guides
+- https://tailwindcss.com/docs/guides/create-react-app
+- https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

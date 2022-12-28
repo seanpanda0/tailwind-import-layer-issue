@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import 'tailwindcss/base';
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+@import './custom-base.css';
+/*  this is added in the wrong order ^^^.
+    I think the @tailwind tag in tailwindcss/base is proccessed after the imports.
+    the tailwind base styles overide the custom styles.
+*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* @import './broken-layers.css'; */
+/*  If you uncomment that line ^^^ you get an error
+    This uses @layer to try to force custom styles to be applied in the right place.
+
+        Compiled with problems:
+
+        ERROR in ./src/broken-layers.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./src/broken-layers.css)
+
+        Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+        SyntaxError
+
+        (2:1) ./src/broken-layers.css `@layer base` is used but no matching `@tailwind base` directive is present.
+*/
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+
