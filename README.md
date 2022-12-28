@@ -10,6 +10,9 @@
 - https://tailwindcss.com/docs/guides/create-react-app
 - https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports
 
+## Images
+
+![Screenshot 2022-12-28 at 13 49 25](https://user-images.githubusercontent.com/106398418/209870488-0f365eb5-7942-479b-af5b-963e5154cfce.png)
 
 
 # Getting Started with Create React App
